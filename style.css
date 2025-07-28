@@ -1,0 +1,126 @@
+/* إعداد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+body {
+  font-family: 'Amiri', serif;
+  background-color: #fef9f4;
+  color: #2e2e2e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* ترويسة الموقع */
+header {
+  background-color: #6c473f;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 4px solid #b89b7c;
+}
+
+/* تنسيق العناوين */
+h1, h2, h3 {
+  color: #5a3d31;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* الفقرات */
+p {
+  font-size: 19px;
+  margin: 15px 0;
+}
+
+/* الروابط */
+a {
+  color: #8b5d3a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* حاوية المحتوى */
+.container {
+  max-width: 850px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border: 1px solid #dcc8b0;
+  border-radius: 8px;
+}
+
+/* التذييل */
+footer {
+  background-color: #eee5da;
+  color: #3e3e3e;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  border-top: 1px solid #c6b39c;
+}
+/* إضافة تنسيق للعناوين التوضيحية */
+.section-title {
+  background-color: #70533d;
+  padding: 12px 20px;
+  font-size: 22px;
+  color: #4f362b;
+  border-left: 5px solid #a07c5e;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+/* تنسيقات أيقونية للمحتوى التفاعلي */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+.feature-list li::before {
+  content: "✔️ ";
+  color: #7c4d3f;
+  font-weight: bold;
+}
+
+/* زر تصفح المجمعات بشكل بارز */
+.explore-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #8b5d3a;
+  color: #fff;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.explore-button:hover {
+  background-color: #a06b4b;
+}
+.start-btn {
+  display: block;
+  width: 280px;
+  margin: 40px auto; /* توسيط الزر أفقيًا */
+  padding: 14px 20px;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قائمة المجمعات السكنية</title>
+  <style>
+    header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #2980b9;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+body {
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+}
+
+.card:hover {
+  background-color: #eaf0f6;
+}
+
+
+    .back-btn {
+  display: block;
+  width: 220px;
+  margin: 30px auto;
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #2471a3;
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: #f0f4f8;
+}
+
+.card h3 {
+  margin: 0;
+  color: #34495e;
+  font-size: 20px;
+}
+.social-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ألوان مخصصة لكل زر */
+.facebook {
+  background-color: #3b5998;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.instagram {
+  background: linear-gradient(45deg, #fd1d1d, #833ab4);
+}
+.email {
+  background-color: #2c3e50;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.back-btn {
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: #2d3436;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.back-btn:hover {
+  background-color: #636e72;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 30px 20px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* ألوان مميزة لكل بطاقة */
+.salam {
+  background: linear-gradient(135deg, #00b894, #55efc4);
+}
+.dijla {
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+}
+.ur {
+  background: linear-gradient(135deg, #fd79a8, #fab1a0);
+}
+.rafidain {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f1f2f6;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+  display: block;
+  margin-bottom: 35px;
+  text-align: center;
+  padding: 14px 22px;
+  background: linear-gradient(to right, #636e72, #2d3436);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.back-btn:hover {
+  background: linear-gradient(to right, #b2bec3, #636e72);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 45px;
+  padding: 30px 0;
+}
+
+.card {
+  padding: 45px 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* بطاقات مخصصة لكل مجمع */
+.salam {
+  background: linear-gradient(135deg, #00cec9, #81ecec);
+}
+.dijla {
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+}
+.ur {
+  background: linear-gradient(135deg, #d63031, #fab1a0);
+}
+.rafidain {
+  background: linear-gradient(135deg, #5ce0e7, #a29bfe);
+}
+footer {
+  background-color: #eee5da;
+  color: #3e3e3e;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  border-top: 1px solid #c6b39c;
+}
+.custom-footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 5px solid #3498db;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 20px; /* مسافة تفصل النص عن الأزرار */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.social-icon {
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير عند التمرير */
+.social-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ألوان مميزة لكل زر */
+.facebook {
+  background-color: #3b5998;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.instagram {
+  background: linear-gradient(45deg, #fd1d1d, #833ab4);
+}
+.email {
+  background-color: #7f8c8d;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>قائمة المجمعات السكنية في ذي قار</h2>
+  </header>
+
+  <div class="container">
+  <a class="back-btn" href="index.html.html">العودة للصفحة الرئيسية</a>
+
+  <div class="grid">
+    <div class="card salam" onclick="location.href='details/mujamma1.html'">
+      <h3>مجمع حلم الحياة السكني</h3>
+    </div>
+
+    <div class="card dijla" onclick="location.href='details/mujamma2.html'">
+      <h3>مجمع الرحمن السكني</h3>
+    </div>
+
+    <div class="card ur" onclick="location.href='details/mujamma3.html'">
+      <h3>مجمع الازهر السكني</h3>
+    </div>
+
+    <div class="card rafidain" onclick="location.href='details/mujamma4.html'">
+      <h3>مجمع الامن الوطني</h3>
+    </div>
+    <div class="card rafidain" onclick="location.href='details/mujamma5.html'">
+      <h3>مجمع الجوهرة</h3>
+    </div>
+    <div class="card rafidain" onclick="location.href='details/mujamma6.html'">
+      <h3>مجمع الاطباء</h3>
+    </div>
+    <div class="card rafidain" onclick="location.href='details/mujamma7.html'">
+      <h3>مجمع الراشد</h3>
+    </div>
+    <div class="card rafidain" onclick="location.href='details/mujamma8.html'">
+      <h3>مجمع امباير</h3>
+    </div>
+  </div>
+</div>
+
+
+  
+  <footer class="custom-footer">
+  <div class="footer-content">
+    <p>© 2025 دليلك السكني – ذي قار</p>
+
+    <div class="social-buttons">
+      <a href="https://facebook.com" target="_blank" class="social-icon facebook">فيسبوك</a>
+      <a href="https://twitter.com" target="_blank" class="social-icon twitter">تويتر</a>
+      <a href="https://instagram.com" target="_blank" class="social-icon instagram">إنستغرام</a>
+      <a href="mailto:info@housing-guide.com" class="social-icon email">إيميل</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
